@@ -1,0 +1,28 @@
+apiVersion: crds.snhd.co/v1
+kind: BlogPost
+metadata:
+  name: my-first-post
+spec:
+  title: My Blog Runs On Kubernetes
+  body: |
+    Hey folks, this is how I built my blog on top of Kubernetes…
+---
+apiVersion: crds.snhd.co/v1
+kind: BlogPost
+metadata:
+  name: my-second-post
+spec:
+  title: 10 Reasons You Should Run Your Blog *in* Kubernetes
+  body: |
+    This *Markdown* is in a CRD. How exciting is that?
+
+    ```
+    apiVersion: crds.snhd.co/v1
+    kind: BlogPost
+    metadata:
+      name: my-second-post
+    spec:
+      title: Title Goes Here
+      body: |
+        *content goes here*
+    ```

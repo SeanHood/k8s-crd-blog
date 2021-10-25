@@ -1,0 +1,19 @@
+{
+  "name": "k8s-crd-blog",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "svelte-kit dev",
+    "build": "svelte-kit build",
+    "preview": "svelte-kit preview"
+  },
+  "devDependencies": {
+    "@sveltejs/kit": "next",
+    "svelte": "^3.42.6"
+  },
+  "type": "module",
+  "dependencies": {
+    "@kubernetes/client-node": "^0.15.1",
+    "axios": "^0.24.0",
+    "svelte-markdown": "^0.1.12"
+  }
+}
