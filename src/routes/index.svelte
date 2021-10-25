@@ -16,13 +16,11 @@
     export let posts;
 </script>
 
-<h1>Welcome to my Kubernetes Blog</h1>
-
-
 {#each posts as post}
     <BlogPost
 		title={post.spec.title}
 		body={post.spec.body}
 		date={post.metadata.creationTimestamp}
-		tags={post.metadata.labels} />
+		tags={post.metadata.labels}
+		slug={post.metadata.name} />
 {/each}

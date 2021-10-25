@@ -3,6 +3,8 @@
 </script>
 
 <main>
+<h1><a href="/">Welcome to my Kubernetes Blog</a></h1>
+
     <slot></slot>
 </main>
 

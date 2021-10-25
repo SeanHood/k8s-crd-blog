@@ -1,6 +1,7 @@
 <script>
 
     export let title;
+    export let slug = '';
     export let body;
     export let date;
     export let tags = {};
@@ -40,7 +41,7 @@
 
 <section class="post">
 
-    <h2>{title}</h2>
+    <h2><a href="/post/{slug}">{title}</a></h2>
     <span class="meta">
     {#if date}<span class="date">Posted: {date}</span>{/if}
     {#each tag_keys as tag}
