@@ -20,5 +20,9 @@
 
 
 {#each posts as post}
-    <BlogPost title={post.spec.title} body={post.spec.body} date={post.metadata.creationTimestamp} />
+    <BlogPost
+		title={post.spec.title}
+		body={post.spec.body}
+		date={post.metadata.creationTimestamp}
+		tags={post.metadata.labels} />
 {/each}

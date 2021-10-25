@@ -2,6 +2,9 @@ apiVersion: crds.snhd.co/v1
 kind: BlogPost
 metadata:
   name: my-first-post
+  labels:
+    cursed: ""
+    tech: ""
 spec:
   title: My Blog Runs On Kubernetes
   body: |
