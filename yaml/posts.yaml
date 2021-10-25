@@ -29,3 +29,22 @@ spec:
       body: |
         *content goes here*
     ```
+---
+apiVersion: crds.snhd.co/v1
+kind: BlogPost
+metadata:
+  name: new-features
+spec:
+  title: New Feature!
+  body: |
+    Introducing the `BlogConfig` CRD. This new CRD allows you to configure the Title and Colour of your blog.
+
+    ```
+    apiVersion: crds.snhd.co/v1
+    kind: BlogConfig
+    metadata:
+      name: config
+    spec:
+      title: Cursed Resource Definition's
+      colour: "#326ce5"
+    ```

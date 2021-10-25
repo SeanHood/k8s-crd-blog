@@ -1,0 +1,7 @@
+apiVersion: crds.snhd.co/v1
+kind: BlogConfig
+metadata:
+  name: config
+spec:
+  title: Cursed Resource Definition's
+  colour: "#326ce5"

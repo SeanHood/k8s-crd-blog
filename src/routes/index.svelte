@@ -1,5 +1,5 @@
 <script context="module">
-	export const hydrate = false;
+	export const hydrate = true;
 	export async function load({ fetch }) {
 		const res = await fetch(`/api/blogposts`);
 		const blog = await res.json();
