@@ -45,7 +45,7 @@
     <span class="meta">
     {#if date}<span class="date">Posted: {date}</span>{/if}
     {#each tag_keys as tag}
-        <span class="tag">#{tag}</span>
+        <span class="tag"><a href="/tag/{tag}">#{tag}</a></span>
     {/each}
     </span>
 
